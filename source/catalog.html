@@ -6,7 +6,6 @@
   </head>
 
   <body>
-<<<<<<< HEAD
   	<header class="page-header page__header">
   	  <a class="page-header__logo">
   	  	<img src="" width="" height="" alt="">?
@@ -53,7 +52,7 @@
   	  </div>
   	</header>
 
-  	<main>
+  	<main class="main">
       <section class="filtration-travelers">
         <h2 class="filtration-travelers__title">Фильтрация по странам:</h2>
         <form>
@@ -107,7 +106,7 @@
           <fieldset class="level">
             <legend class="level__title">Левел</legend>
             <div class="level__filter">
-              <div class="level__controls">
+              <div class="level__inputs">
                 <label for="min-level">
                   <input type="text" name="min-price" value="30₽" id="min-level">
                 </label>
@@ -115,16 +114,16 @@
                   -<input type="text" name="max-price" value="100₽" id="max-level">
                 </label>
               </div>
-              <div class="level-controls">
-                <div class="level-controls__scale">
-                  <div class="level-controls__bar"></div>
+              <div class="level__controls">
+                <div class="level__scale">
+                  <div class="level__bar"></div>
                 </div>  
-                <div class="level-controls__toggle level-controls__toggle--min"></div>
-                <div class="level-controls__toggle level-controls__toggle--max"></div>
+                <div class="level__toggle level__toggle--min"></div>
+                <div class="level__toggle level__toggle--max"></div>
               </div>
             </div>
           </fieldset>
-          <button type="submit">показать</button>
+          <button class="" type="submit">показать</button>
         </form>
       </section>
   	  <section class="fellow-traveler">
@@ -322,9 +321,11 @@
   	  	  	<a href="#" class="fellow-traveler__button">Позвать!</a>
   	  	  </li>
   	  	</ul>
-  	  	<a href="#">+ показать ещё</a>
-  	  	<button class="fellow-traveler__toggle fellow-traveler__toggle--left">Лево</button>
-  	  	<button class="fellow-traveler__toggle fellow-traveler__toggle--right">Право</button>
+  	  	<a class="fellow-traveler__show" href="#">+ показать ещё</a>
+        <div class="fellow-traveler__toggle-list">
+  	  	  <button class="fellow-traveler__toggle fellow-traveler__toggle--left">Лево</button>
+  	  	  <button class="fellow-traveler__toggle fellow-traveler__toggle--right">Право</button>
+        </div>
   	  </section>
   	</main>
 
