@@ -1,0 +1,70 @@
+@basic_blue: #161C35;
+@blue_light: #EDEFF6;
+@basic_blue_light: 1D2E5B;
+@basic_yellow: #FFD74B;
+@special_yellow_dark: #FFBD30;
+@special_blue_light: #DFE3F0;
+@special_gray: #444444;
+@basic_blue_light: #1D2E5B;
+@special_red: #F47E7E;
+@special_orange: #FF8D30;
+@basic_back: #192144;
+@white: #FFFFFF;
+@orange_light: #FFA530;
+@back_gray: #E6E8F1;
+@black: #000000;
+@gray_blue: #F3F4F8;
+@pure_blue: #132576;
+@gray_blue_light: #CBCED9;
+@light_back: #D4D9EB;
+@yellow: #F3C72B; 
+
+.font-face-light {
+  font-family: "Blogger sans";
+  src: url("../fonts/bloggersans-light.woff2") format("woff2"),
+     url("../fonts/bloggersans-light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+.font-face-bold {
+  font-family: "Blogger sans";
+  src: url("../fonts/bloggersans-bold.woff2") format("woff2"),
+     url("../fonts/bloggersans-bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+.font-face-normal {
+  font-family: "Blogger sans";
+  src: url("../fonts/bloggersans.woff2") format("woff2"),
+     url("../fonts/bloggersans.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.font-face-medium {
+  font-family: "Blogger sans";
+  src: url("../fonts/bloggersans-medium.woff2") format("woff2"),
+     url("../fonts/bloggersans-medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+.paint(@color) {
+	background-color: @color;
+}
+
+.font(@font-size; @line-height) {
+  font-size: @font-size;
+  line-height: @line-height;
+}
+
+.size(@width; @height) {
+	width: @width;
+	height: @height;
+}

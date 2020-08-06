@@ -1,0 +1,32 @@
+.instruction {
+  .paint(@basic_back);
+}
+.instruction__list {
+  matgin-top: -80px;
+}
+.instruction__item {
+  border-radius: 10px;
+  color: @basic_blue;
+  &--choice {
+    .paint(@special_orange);
+    .size(270px; 160px);
+  }
+  &--explore {
+    .paint(@orange_light);
+    .size(270px; 160px);
+    matgin-top: -80px;
+  }
+  &--find {
+    .paint(@special_yellow_dark);
+    .size(270px; 160px);
+    matgin-top: -80px;
+  }
+  &--enjoy {
+    .paint(@basic_yellow);
+    .size(270px; 80px);
+    matgin-top: -80px;
+  }
+}
+.instruction__number {
+  color:@white;
+}
