@@ -1,12 +1,23 @@
 .instruction {
   .paint(@basic_back);
 }
+
 .instruction__list {
-  matgin-top: -80px;
+  list-style: none;
+  padding: 0px;
+  margin-top: 109px;
+  padding-bottom: 39px;
 }
+
 .instruction__item {
   border-radius: 10px;
   color: @basic_blue;
+  .font(18px; 18px);
+  .font-face-bold;
+  margin: -80px auto 0px;
+  padding-top: 11px;
+  padding-left: 24px;
+  position: relative;
   &--choice {
     .paint(@special_orange);
     .size(270px; 160px);
@@ -14,19 +25,24 @@
   &--explore {
     .paint(@orange_light);
     .size(270px; 160px);
-    matgin-top: -80px;
   }
   &--find {
     .paint(@special_yellow_dark);
     .size(270px; 160px);
-    matgin-top: -80px;
   }
   &--enjoy {
     .paint(@basic_yellow);
     .size(270px; 80px);
-    matgin-top: -80px;
   }
 }
+
 .instruction__number {
   color:@white;
+  position: absolute;
+  top: 13.13%;
+  left: 82.5%;
+}
+
+.instruction__number:last-child {
+  
 }

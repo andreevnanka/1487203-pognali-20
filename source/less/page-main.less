@@ -2,7 +2,9 @@
   .paint(@basic_blue);
   background-image: url(.../img/);
 }
+
 .page-main__title {
+  text-align: center;
   .font(36px; 40px);
   .font-face-bold;
   color: @white;
@@ -10,13 +12,49 @@
   margin-right: 41px;
   margin-left: 41px;
 	}
+
 .page-main__tel {}
+
 .page-main__mail {}
+
 .page-main__login {
-  .size(190px; 40px);
   .paint(@basic_yellow);
   color: @basic_blue;
-  margin-top: 245px;
-  margin-right: 24px;
-  margin-left: 106px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 20px;
+  padding: 12px 28px 11px 29px;
+  .font(17px; 20px);
+  .font-face-bold;
+}
+
+.page-main__review {}
+
+.page-main__about {
+  border-radius: 0px 0px 20px 20px;
+  margin: 0px;
+}
+
+.page-main__route {
+  .paint(@blue_light);
+  width: 100%;
+  border-radius: 0px 0px 20px 20px;
+}
+
+.page-main__companion{
+  background-color: @basic_back;
+}
+
+.page-main__business {
+  .paint(@back_gray);
+}
+
+.page-main__tariff {
+  .paint(@back_gray);
+}
+
+.page-main__authorization {}
+
+.page-main__adress {
+  .paint(@basic_yellow);
 }

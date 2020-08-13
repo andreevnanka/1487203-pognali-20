@@ -1,61 +1,104 @@
 .fellow-traveler {
+  width: 84%;
   margin: 28px auto 18px;
+  padding: 9%;
 }
+
 .fellow-traveler__list {
   list-style: none;
+  padding: 0px;
+  margin: 0px;
 }
+
 .fellow-traveler__item {
   .paint(@white);
   border-radius: 20px;
-  hight: 419px;
+  padding: 9%;
+  margin-bottom: 10px;
 }
+
 .fellow-traveler__name {
   color: @basic_blue_light;
   .font(20px; 20px);
-  @font-face {
-    font-family: "Blogger sans";
-    src: url("../fonts/bloggersans-bold.woff2") format("woff2"),
-       url("../fonts/bloggersans-bold.woff") format("woff");
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-  }
+  .font-face-bold;
   margin-top: 3,57%;
 }
+
 .fellow-traveler__avatar {
-  margin-top: 3,57%;
   position: relative;
+  border-radius: 50%;
 }
+
 .fellow-traveler__like {
   position: absolute;
 }
+
 .fellow-traveler__tag {
   color: @special_gray;
 }
-.fellow-traveler__want {}
+
+.fellow-traveler__want {
+  border-top: 1px solid #EDEFF6;
+}
+
 .fellow-traveler__title {
   color: @special_gray;
+  margin: 0px;
 }
-.fellow-traveler__transport {}
+
+.fellow-traveler__transport-level {
+  padding: 0px;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #EDEFF6;
+  margin-bottom: 20px;
+}
+
+.fellow-traveler__transport {
+  
+}
+
 .fellow-traveler__level {}
+
 .fellow-traveler__button {
   text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
   color: @basic_blue;
   .paint(@basic_yellow);
-  hight: 9,64%;
-  padding: auto;
+  width: 84%;
+  padding: 14px;
+  border-radius: 15px;
+  .font-face-normal;
+  .font(17px; 17px);
+  margin: 0px auto 0px;
 }
+
 .fellow-traveler__show {
   color: @basic_blue_light;
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
 }
+
 .fellow-traveler__toggle-list {
   .paint(@white);
   border-radius: 20px;
-  hight: 51px;
-  width: 84.37%;
+  width: 100%;
   margin-top: 26px;
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr;
 }
+
 .fellow-traveler__toggle {
-  &--left {}
-  &--right {}
+  border: none;
+  padding: 17px;
+  &--left {
+    border-radius: 20px 0px 0px 20px;
+    
+  }
+  &--right {
+    border-radius: 0px 20px 20px 0px;
+
+  }
 }

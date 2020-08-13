@@ -1,6 +1,7 @@
 .new-plan {
   .paint(@light_back);
-  height: 2537px;
+  border-radius:10px;
+  padding: 9%;
 }
 .new-plan__title {
   margin-top: 30px;
@@ -9,7 +10,10 @@
   .font(24px; 24px);
   .font-face-bold;
 }
-.new-plan__togles {}
+.new-plan__togles {
+  display: inline-flex;
+  color: @basic_blue_light;
+}
 .new-plan__step {
   color: @basic_blue_light;
   .font(20px; 20px);
@@ -24,10 +28,21 @@
 .new-plan__button-next {
   .paint(@basic_yellow);
   color: @basic_blue_light;
-  width: 71,56%;
+  width: 100%;
   margin: 22px auto 0px;
+  border: none;
+  border-radius: 20px;
+  text-transform: uppercase;
+  .font(17px; 30px);
+  .font-face-bold;
 }
 .new-plan__button-back {
   color: @basic_blue_light;
   margin: 0px auto;
+  width: 100%;
+  text-transform: uppercase;
+  .font(17px; 30px);
+  .font-face-bold;
+  border: none;
+  background: none;
 }

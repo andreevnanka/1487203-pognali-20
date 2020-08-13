@@ -1,33 +1,43 @@
 .route {
-  .paint(blue_light);
+  .paint(@blue_light);
+  width: 320px;
+  height: auto;
+  margin: 0px auto 0px;
+  padding-top: 71px;
 }
 .route__title {
   .font(24px; 24px);
   .font-face-bold;
   color: @special_orange;
-  margin-top: 71px;
-  margin-right: 126px;
-  margin-left: 50px;
+  margin: 0px auto 0px;
+  padding-left: 50px;
 }
 .route__article {
   .font(16px; 22px);
   .font-face-light;
   color:@special_gray;
-  margin-right: 55px;
-  margin-left: 49px;
+  margin: 0px auto 0px;
+  padding-left: 50px;
+  padding-bottom: 50px;
 }
 .route__list {
-  margin-top: 60px;
-  margin-right: 25px;
-  margin-left: 25px;
+  list-style: none;
+  padding: 0px;
+  
 }
 .route__item {
   margin-bottom: 9px;
   .paint(@white);
+  padding: 0px;
 }
 .route__button {
   .paint(@basic_yellow);
   color: @basic_blue_light;
   .font(18px; 18px);
   .font-face-bold;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 10px;
+  padding: 22px 141px 22px 23px;
+  margin: 27px auto 34px;
 }

@@ -1,16 +1,61 @@
 .first-step {
   .paint(@white);
   border-radius: 10px;
-  margin-top: 24px;
+  margin: 24px auto 0px;
+  width: 66%;
+  padding: 9%;
 }
 .first-step__filters {
   margin: 20px auto 0px;
 }
-.first-step__fellow-travelers {}
-.first-step__long {}
+.first-step__fellow-travelers {
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: @basic_blue_light;
+  .font-face-normal;
+  .font(16px; 16px);
+}
+.first-step__long {
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: @basic_blue_light;
+  .font-face-normal;
+  .font(16px; 16px);
+}
 .first-step__child {
   color: @basic_blue_light;
   .font(15px; 15px);
   .font-face-normal;
+  border: none;
 }
-.first-step__dates {}
+.first-step__dates {
+  border: none;
+}
+
+.first-step__value {
+  opacity: 0.3;
+}
+
+.first-step__div {
+  border: 1px solid #CBCED9;
+  display: flex;
+  justify-content: space-between;
+  padding:16px 14px;
+  border-radius: 4px;
+}
+
+.first-step__button {
+  border: none;
+  background: none;
+  color: @basic_blue_light;
+  .font(20px; 15px);
+  .font-face-normal;
+  opacity: 0.3;
+}
+
+.first-step__quantity {
+  border: none;
+  text-align: center;
+}

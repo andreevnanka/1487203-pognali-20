@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>Погнали:Направления</title>
+    <link rel="stylesheet"  href="css/style.css">
   </head>
   <body>
 
     <header class="page-header page__header">
       <a class="page-header__logo">
-        <img src="" width="" height="" alt="">?
+        <img src="img/logo-mobile-blue@1x.png" width="100" height="15" alt="Погнали?">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
@@ -16,14 +17,14 @@
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a href="">О сервисе</a>
+            <li>
+              <a class="site-list__item" href="">О сервисе</a>
             </li>
-            <li class="site-list__item">
-              <a href="form.html">Направления</a>
+            <li>
+              <a class="site-list__item" href="form.html">Направления</a>
             </li>
-            <li class="site-list__item">
-              <a href="catalog.html">Попутчики</a>
+            <li>
+              <a class="site-list__item" href="catalog.html">Попутчики</a>
             </li>
             </ul>
           <ul class="main-nav__list user-list">
@@ -55,10 +56,10 @@
     <main>
       <section class="about-you">
         <img src="" class="about-you__level">
-        <img src="" class="about-you__avatar">
-        <button>Сменить фото</button>
+        <img src="img/demin-mobile@1x.jpg" class="about-you__avatar" width="100" height="100">
+        <button class="about-you__button">Сменить фото</button>
           <div class="about-you__tags">
-            <h2>тэги</h2>
+            <h2 class="about-you__title">тэги</h2>
             <textarea placeholder="#бургер #бар #футбол #концерт #крафт">
             </textarea>
           </div>
@@ -67,19 +68,19 @@
             <ul class="transport-list">
               <li class="transport-list__item">
                 <input type="checkbox" name="plane" id="plane" checked>
-                <label for="plane">Авиаперелет</label>
+                <label class="visually-hidden" for="plane">Авиаперелет</label>
               </li>
               <li class="transport-list__item">
                 <input type="checkbox" name="auto" id="auto" checked>
-                <label for="auto">Автотранспорт</label>
+                <label class="visually-hidden" for="auto">Автотранспорт</label>
               </li>
               <li class="transport-list__item">
                 <input type="checkbox" name="bike" id="bike">
-                <label for="bike">Велосипед</label>
+                <label class="visually-hidden" for="bike">Велосипед</label>
               </li>
               <li class="transport-list__item">
                 <input type="checkbox" name="on-foot" id="on-foot" checked>
-                <label for="on-foot">Пешком</label>
+                <label class="visually-hidden" for="on-foot">Пешком</label>
               </li>
             </ul>
           </div>
@@ -87,14 +88,14 @@
       <section class="plans">
         <h2 class="plans__title">Мои планы:</h2>
         <ul class="plans__list">
-          <li>
+          <li class="plans__item">
             <div class="plan-card">
             <h3 class="plan-card__country">Франция, Италия</h3>
             <p class="plan-card__travelers">3 попутчика <span class="plan-card__dates">26 мар — 29 мар</span></p>
             <a href="" class="plan-card__button">изменить</a>
             </div>
           </li>
-          <li>
+          <li class="plans__item">
             <div class="plan-card">
             <h3 class="plan-card__country">Таиланд, Индонезия</h3>
             <p class="plan-card__travelers">1 попутчик<span class="plan-card__dates">1 июл — 15 июл</span></p>
@@ -111,22 +112,26 @@
           <li></li>
         </ul>
         <div class="first-step">
-          <h3 class="first-step__title">Шаг 1.<br>Даты пребывания</h3>
-          <p class="first-step__description">Укажите предпочтительное <br>количество попутчиков, которых <br>вы хотели бы позвать в поездку<br>и ее предполагаемую <br> длительность.</p>
+          <h3 class="new-plan__step">Шаг 1.<br>Даты пребывания</h3>
+          <p class="new-plan__description">Укажите предпочтительное <br>количество попутчиков, которых <br>вы хотели бы позвать в поездку<br>и ее предполагаемую <br> длительность.</p>
           <form class="first-step__filters" action="https://echo.htmlacademy.ru" method="get">
             <fieldset class="first-step__fellow-travelers">
-              <legend>ищу попутчиков:</legend>
-              <p>чел.</p>
-              <button>-</button>
-              <input type="text" name="fellow-travelers" placeholder="2">
-              <button>+</button>
+              <legend for="fellow-travelers-people">ищу попутчиков:</legend>
+              <p class="first-step__value">чел.</p>
+              <div class="first-step__div">
+                <button class="first-step__button first-step__button--min">-</button>
+                <input class="first-step__quantity" type="text" name="fellow-travelers-people" placeholder="2">
+                <button class="first-step__button first-step__button--plus">+</button>
+              </div>
             </fieldset>
             <fieldset class="first-step__long">
-              <legend>длительность:</legend>
-              <p>дн.</p>
-              <button>-</button>
-              <input type="text" name="fellow-travelers" placeholder="2">
-              <button>+</button>
+              <legend for="fellow-travelers-days">длительность:</legend>
+              <p class="first-step__value">дн.</p>
+              <div class="first-step__div">
+                <button class="first-step__button first-step__button--min">-</button>
+                <input class="first-step__quantity" type="text" name="fellow-travelers-days" placeholder="2">
+                <button class="first-step__button first-step__button--plus">+</button>
+              </div>
             </fieldset>
             <fieldset class="first-step__child">
               <label>Можно с детьми</label>
@@ -145,12 +150,12 @@
                 <tbody>
               </table>
             </fieldset>
-            <button class="first-step__button-next" type="submit">Следующий шаг</button>
+            <button class="new-plan__button-next" type="submit">Следующий шаг</button>
           </form>
         </div>
         <div class="second-step">
-          <h3 class="second-step__title">Шаг 2.<br>Маршрут</h3>
-          <p class="second-step__description">Укажите страны, которые вы<br>хотели посетить. Это может быть<br>одна или сразу несколько.</p>
+          <h3 class="new-plan__step">Шаг 2.<br>Маршрут</h3>
+          <p class="new-plan__description">Укажите страны, которые вы<br>хотели посетить. Это может быть<br>одна или сразу несколько.</p>
           <form class="filters" action="https://echo.htmlacademy.ru" method="get">
             <fieldset class="second-step__country">
               <ul class="second-step__list">
@@ -174,13 +179,13 @@
                 </li>
               </ul>
             </fieldset>
-            <button class="second-step__button-next" type="submit">Следующий шаг</button>
-            <button class="second-step__button-back">на шаг назад</button>
+            <button class="new-plan__button-next" type="submit">Следующий шаг</button>
+            <button class="new-plan__button-back">на шаг назад</button>
           </form>
         </div>
-        <div>
-          <h3 class="third-step__title">Шаг 3.<br>Развлечения</h3>
-          <p class="third-step__description">Наконец, расскажите о своих<br>планах времяпровождения.<br>Можно писать в свободной<br>форме и ставить тэги.</p>
+        <div class="third-step">
+          <h3 class="new-plan__step">Шаг 3.<br>Развлечения</h3>
+          <p class="new-plan__description">Наконец, расскажите о своих<br>планах времяпровождения.<br>Можно писать в свободной<br>форме и ставить тэги.</p>
           <form class="third-step__form form">
             <ul class="form__list">
               <li class="form__item">
@@ -194,33 +199,32 @@
                 <textarea class="form__textarea">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
               </li>
             </ul>
-            <button class="third-step__button-next" type="submit">Отправить</button>
-          <button class="third-step__button-back">на шаг назад</button>
+            <button class="new-plan__button-next" type="submit">Отправить</button>
+            <button class="new-plan__button-back">на шаг назад</button>
           </form>
         </div>
       </section>
     </main>
 
     <footer class="page-footer">
-      <img src="" alt="Логотип сервиса">?
-      <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+      <img class="page-footer__logo" src="img/logo-mobile-blue@1x.png" alt="Логотип сервиса" width="96" height="auto">
+      <div class="page-footer__social footer-social">
+        <ul class="footer-social__list">
+          <li class="footer-social__item">
+            <a class="footer-social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
           </li>
-          <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+          <li class="footer-social__item">
+            <a class="footer-social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
           </li>
-          <li class="social__item">
-            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+          <li class="footer-social__item">
+            <a class="footer-social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
           </li>
         </ul>
       </div>
       <div class="page-footer__copyright">
         <p>Разработано</p>
-        <a href="https://up.htmlacademy.ru/adaptive/20"><img src="" width="" height="" alt="Логотип академии"></a>
+        <a href="https://up.htmlacademy.ru/adaptive/20"><img src="img/htmlacademy.svg" width="27" height="33" alt="Логотип академии"></a>
       </div>
     </footer>
-
   </body>
 </html>

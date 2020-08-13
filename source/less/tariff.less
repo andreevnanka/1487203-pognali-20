@@ -2,17 +2,19 @@
   .paint(@white);
   width: 270px;
   height: 443px;
+  margin: 0px auto 0px;
+  border-radius: 10px;
 }
 .tariff__title {
   color: @special_orange;
   .font(24px; 24px);
   .font-face-bold;
-  margin: 34px auto 0px;
+  margin: 0px auto 0px;
+  padding-top: 34px;
+  text-align: center;
 }
 .tariff__list {
-  margin-top: 39px;
-  margin-right:25px;
-  margin-bottom: 34px;
+  margin: 39px auto 34px;
   width: 219px;
   height: 264px;
   border-top: 1px solid lighten(@black, 50%);
@@ -29,6 +31,7 @@
     color: @pure_blue;
     .font(16px; 16px);
     .font-face-bold;
+    border: none;
   }
   &--close {
     .paint(@gray_blue);
@@ -36,5 +39,7 @@
     .font(16px; 24px);
     .font-face-bold;
     text-transform: uppercase;
+    text-align: center;
+    border: none;
   }
 }
