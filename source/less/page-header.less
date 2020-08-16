@@ -7,8 +7,6 @@
 
 .page-header__logo { 
   back-ground-color: @white;
-  outline: 5px solid rgba(0, 255, 0, 0.8);
-  outline-offset: -5px;
 }
 
 .page-header__contacts {
@@ -29,12 +27,8 @@
 }
 
 @media (min-width: @tablet-width) {
-  
-}
-
-@media (min-width: @desktop-width) {
   .page-header {
-    .paint(@basic-blue);
+    .paint(@white);
     display: inline-flex;
     display: block;
     width: 91%;
@@ -42,6 +36,8 @@
     margin: 0px auto 0px;
     padding-left: 0px;
     padding-right: 0px;
+    outline: 5px solid rgba(0, 255, 0, 0.8);
+  outline-offset: -5px;
   }
 
   .page-header__social {
