@@ -1,10 +1,23 @@
-.site-list{
+.site-list {
   list-style: none;
   text-align: center;
   text-transform: uppercase;
   padding: 0px;
+  
 }
-.site-list__item{
-  color: @basic_back;
+
+.site-list__item {
+  color: @basic-back;
   text-decoration: none;
+}
+
+@media (min-width: @desktop-width) {
+  .site-list {
+    width: 390px;
+  }
+
+  .site-list__item {
+    color: @white;
+    .font(20px; 20px);
+  }
 }

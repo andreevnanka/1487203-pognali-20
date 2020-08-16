@@ -1,15 +1,26 @@
 .review {
-  .paint(@basic_blue);
+  .paint(@basic-blue);
   color: @white;
   width: 320px;
   margin: 0px auto 0px;
 }
+
 .review__content {}
+
 .review__quote {
   .font(16px; 22px);
   .font-face-light;
 }
+
 .review__author {
   .font(16px; 22px);
   .font-face-bold;
+}
+
+@media (min-width: @desktop-width) {
+  .review {
+    position: absolute;
+    left: 74%;
+    top: 221px;
+  }
 }

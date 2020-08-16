@@ -3,6 +3,29 @@
   .font-face-medium;
   outline-offset: -5px;
 }
+
 .main-nav__toggle{
   position:absolute;
+}
+
+
+@media (min-width: @desktop-width) {
+  .main-nav {
+    margin-left: 26%;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__list {
+    display: inline-flex;
+  }
+
+  .main-nav__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    outline: 5px solid rgba(0, 255, 0, 0.8);
+  }
 }

@@ -1,5 +1,5 @@
 .instruction {
-  .paint(@basic_back);
+  .paint(@basic-back);
 }
 
 .instruction__list {
@@ -11,7 +11,7 @@
 
 .instruction__item {
   border-radius: 10px;
-  color: @basic_blue;
+  color: @basic-blue;
   .font(18px; 18px);
   .font-face-bold;
   margin: -80px auto 0px;
@@ -19,19 +19,19 @@
   padding-left: 24px;
   position: relative;
   &--choice {
-    .paint(@special_orange);
+    .paint(@special-orange);
     .size(270px; 160px);
   }
   &--explore {
-    .paint(@orange_light);
+    .paint(@orange-light);
     .size(270px; 160px);
   }
   &--find {
-    .paint(@special_yellow_dark);
+    .paint(@special-yellow-dark);
     .size(270px; 160px);
   }
   &--enjoy {
-    .paint(@basic_yellow);
+    .paint(@basic-yellow);
     .size(270px; 80px);
   }
 }
@@ -45,4 +45,38 @@
 
 .instruction__number:last-child {
   
+}
+
+@media (min-width: @desktop-width) {
+  .instruction {
+    background: none;
+    width: 91%;
+    margin: 0px auto 0px;
+  }
+  .instruction__list {
+    display: inline-flex;
+    margin: 116px auto 0px;
+    width: 100%;
+  }
+  .instruction__item {
+    &--choice {
+      .paint(@special-orange);
+      .size(345px; 107px);
+      margin-right: -30px;
+    }
+    &--explore {
+      .paint(@orange-light);
+      .size(345px; 107px);
+      margin-right: -30px;
+    }
+    &--find {
+      .paint(@special-yellow-dark);
+      .size(345px; 107px);
+      margin-right: -30px;
+    }
+    &--enjoy {
+      .paint(@basic-yellow);
+      .size(315px; 107px);
+    }
+  }
 }

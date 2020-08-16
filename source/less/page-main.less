@@ -1,5 +1,5 @@
 .page-main {
-  .paint(@basic_blue);
+  .paint(@basic-blue);
   background-image: url(.../img/);
 }
 
@@ -11,15 +11,15 @@
   margin-top:21px;
   margin-right: 41px;
   margin-left: 41px;
-	}
+}
 
 .page-main__tel {}
 
 .page-main__mail {}
 
 .page-main__login {
-  .paint(@basic_yellow);
-  color: @basic_blue;
+  .paint(@basic-yellow);
+  color: @basic-blue;
   text-decoration: none;
   text-transform: uppercase;
   border-radius: 20px;
@@ -36,25 +36,40 @@
 }
 
 .page-main__route {
-  .paint(@blue_light);
+  .paint(@blue-light);
   width: 100%;
   border-radius: 0px 0px 20px 20px;
 }
 
 .page-main__companion{
-  background-color: @basic_back;
+  background-color: @basic-back;
 }
 
 .page-main__business {
-  .paint(@back_gray);
+  .paint(@back-gray);
 }
 
 .page-main__tariff {
-  .paint(@back_gray);
+  .paint(@back-gray);
 }
 
 .page-main__authorization {}
 
 .page-main__adress {
-  .paint(@basic_yellow);
+  .paint(@basic-yellow);
+}
+
+@media (min-width: @desktop-width) {
+  .page-main {}
+
+  .page-main__title {
+    width: 418px;
+    text-align: start;
+    margin-top: 122px;
+    padding-left: 9%;
+  }
+
+  .page-main__login {
+    display: none;
+  }
 }
