@@ -47,31 +47,33 @@
   
 }
 
-@media (min-width: @desktop-width) {
+@media (min-width: @tablet-width) {
   .instruction__list {
     display: inline-flex;
+    flex-wrap: wrap;
     margin: 116px auto 0px;
-    width: 100%;
+    width: 688px;
   }
 
   .instruction__item {
     &--choice {
       .paint(@special-orange);
-      .size(345px; 107px);
+      .size(365px; 140px);
       margin-right: -30px;
     }
     &--explore {
       .paint(@orange-light);
-      .size(345px; 107px);
+      .size(344px; 140px);
       margin-right: -30px;
     }
     &--find {
       .paint(@special-yellow-dark);
-      .size(345px; 107px);
+      .size(365px; 140px);
       margin-right: -30px;
     }
     &--enjoy {
       .paint(@basic-yellow);
-      .size(315px; 107px);
+      .size(344px; 140px);
     }
+  }
 }
